@@ -5,72 +5,62 @@
 
 <body>
     <h1>Contributors</h1>
-    <<<<<<< HEAD <ul>
-        <li>
-            Sean Hagen
-        </li>
-        <canvas width="500" height="300" id="canvas" />
-        <script>
-            let canvas = document.querySelector('#canvas');
-            let draw = canvas.getContext('2d');
-            draw.beginPath();
-
-            draw.fillStyle = "yellow";
-
-            draw.arc(75, 75, 50, 0, Math.PI * 2, true);
-
-            draw.closePath();
-
-            draw.fill();
-
-            draw.beginPath();
-
-            //fill the style with color black    
-            draw.fillStyle = "black";
-
-            //left round eye    
-            draw.arc(50, 50, 4, 0, Math.PI * 2, true);
-            draw.closePath();
-            draw.fill();
-
-            //move to the new sub path from the current point and create a right eye    
-            draw.moveTo(103, 49);
-
-            draw.beginPath();
-            draw.fillStyle = "black";
-            //right round eye    
-            draw.arc(100, 50, 4, 0, Math.PI * 2, true);
-            draw.closePath();
-            draw.fill();
-
-            draw.moveTo(105, 75);
-            draw.beginPath();
-            draw.strokeStyle = "red";
-            draw.arc(75, 75, 30, 0, Math.PI, false);
-            //to draw a half rounded circle with a line stroke we can invoke the stroke function    
-            draw.stroke();
-        </script>
+    <li>
+        <ul>
+            <li>
+                Sean Hagen
+            </li>
+            <li>
+                Noah Magcalas
+            </li>
+            <li>
+                Gabriel Venberg
+            </li>
+            <li>
+                Benjamin Hoefs
+            </li>
         </ul>
 
 </body>
-||||||| 9acd387
-<ul>
-    <li>
-        Sean Hagen
-    </li>
-</ul>
+</li>
+<canvas width="500" height="300" id="canvas" />
+<script>
+    let canvas = document.querySelector('#canvas');
+    let draw = canvas.getContext('2d');
+    draw.beginPath();
 
-</body>
-=======
-<ul>
-    <li>
-        Sean Hagen
-    </li>
-    <li>
-        Noah Magcalas
-    </li>
-    <li>Gabriel Venberg</li>
-</ul>
+    draw.fillStyle = "yellow";
 
-</body>
->>>>>>> 3033e73b90b3e2e51665c9be5e8d16dbaf021e1e
+    draw.arc(75, 75, 50, 0, Math.PI * 2, true);
+
+    draw.closePath();
+
+    draw.fill();
+
+    draw.beginPath();
+
+    //fill the style with color black    
+    draw.fillStyle = "black";
+
+    //left round eye    
+    draw.arc(50, 50, 4, 0, Math.PI * 2, true);
+    draw.closePath();
+    draw.fill();
+
+    //move to the new sub path from the current point and create a right eye    
+    draw.moveTo(103, 49);
+
+    draw.beginPath();
+    draw.fillStyle = "black";
+    //right round eye    
+    draw.arc(100, 50, 4, 0, Math.PI * 2, true);
+    draw.closePath();
+    draw.fill();
+
+    draw.moveTo(105, 75);
+    draw.beginPath();
+    draw.strokeStyle = "red";
+    draw.arc(75, 75, 30, 0, Math.PI, false);
+    //to draw a half rounded circle with a line stroke we can invoke the stroke function    
+    draw.stroke();
+</script>
