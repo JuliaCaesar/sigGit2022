@@ -1,9 +1,11 @@
 <head>
     <script type="js" src="javascript.js"></script>
-	<link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
     <h1>Contributors</h1>
+    <li>
         <ul>
             <li>
                 Sean Hagen
@@ -15,11 +17,59 @@
                 Gabriel Venberg
             </li>
             <li>
+                Benjamin Hoefs
+            </li>
                 Alex Bly
             </li>
+            <li>
+                William Soksoda
+                </li>
         </ul>
     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> 
         https://ndacm.org
     </a>
     
+
 </body>
+</li>
+<canvas width="500" height="300" id="canvas" />
+<script>
+    let canvas = document.querySelector('#canvas');
+    let draw = canvas.getContext('2d');
+    draw.beginPath();
+
+    draw.fillStyle = "yellow";
+
+    draw.arc(75, 75, 50, 0, Math.PI * 2, true);
+
+    draw.closePath();
+
+    draw.fill();
+
+    draw.beginPath();
+
+    //fill the style with color black    
+    draw.fillStyle = "black";
+
+    //left round eye    
+    draw.arc(50, 50, 4, 0, Math.PI * 2, true);
+    draw.closePath();
+    draw.fill();
+
+    //move to the new sub path from the current point and create a right eye    
+    draw.moveTo(103, 49);
+
+    draw.beginPath();
+    draw.fillStyle = "black";
+    //right round eye    
+    draw.arc(100, 50, 4, 0, Math.PI * 2, true);
+    draw.closePath();
+    draw.fill();
+
+    draw.moveTo(105, 75);
+    draw.beginPath();
+    draw.strokeStyle = "red";
+    draw.arc(75, 75, 30, 0, Math.PI, false);
+    //to draw a half rounded circle with a line stroke we can invoke the stroke function    
+    draw.stroke();
+</script>
