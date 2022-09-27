@@ -1,6 +1,6 @@
 <head>
     <script type="js" src="javascript.js"></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link id="pagestyle" rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -45,6 +45,19 @@
                 window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank")
             }
         </script>
+        
+        <script>
+            function swapStyleSheet(sheet) {
+                document.getElementById("pagestyle").setAttribute("href", sheet);  
+            }
+        </script>
+        <button onclick="swapStyleSheet('styles.css')">
+            Dark Mode
+        </button>
+        <button onclick="swapStyleSheet('lightmode.css')">
+            Light Mode
+        </button>
+        
 
 </body>
 </li>
